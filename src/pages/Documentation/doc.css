@@ -1,0 +1,24 @@
+.doc{
+    height: 100vh;
+    background-image: linear-gradient(to left, #000000, #2a2a2a, #000000 100% );
+}
+.doc h2, .doc h3, .doc h4{
+    background: linear-gradient(to bottom, #ff7700, #fffdf1 );
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 20px 0 15px 0;
+} 
+.doc span, .doc li{
+    background: linear-gradient(to top, #ff7700, #fffdf1 );
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 15px;
+    
+}
+.rec span{
+margin-bottom: 10px;
+}

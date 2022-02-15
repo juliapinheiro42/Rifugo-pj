@@ -1,0 +1,36 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+}
+
+.nav{
+    background-image: linear-gradient(to right, #000000, #332f2d );
+   
+}
+.drop {
+    background-image: linear-gradient(to right, #ff6600, #f7c37f, #ff6600 );
+   border-radius: 10px;
+}
+.drop:hover{
+    color: #fffdf1;
+}
+.drop a{
+    background: linear-gradient(to top, #000000, #332f2d );
+    font-weight: 500;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.drop a:hover{
+    background: transparent;
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    
+}
+.header img{
+width: 80px;
+display: flex;
+}

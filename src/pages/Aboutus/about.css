@@ -1,0 +1,231 @@
+
+.about{
+    height: 100vh;
+    background-image: linear-gradient(to left, #222121, #131210, #332f2d 100% ); 
+}
+
+.mor-div{
+    height: 100vh;
+    background-image: linear-gradient(to left, #222121, #131210, #332f2d 100% );
+}
+
+.rowcard{
+    display: grid;
+    grid-template-columns: repeat(4, 01fr);
+}
+
+
+.outer-div,
+.inner-div {
+    height: 450px;
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.outer-div {
+    perspective: 900px;
+    perspective-origin: 50% calc(50% - 18em);
+}
+
+.inner-div {
+    margin: 0 auto;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #fffdf1;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+    transform-style: preserve-3d;
+}
+
+    .inner-div:hover .social-icon {
+        opacity: 1;
+        top: 0;
+    }
+
+.outer-div:hover .inner-div {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    cursor: pointer;
+    height: 100%;
+    background-image: linear-gradient(to left, #000000, #2a2a2a, #000000 100% );
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px #ff6600, 0 1px 4px #ff6600, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.front__bkg-photo {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+    .front__bkg-photo:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+.front__face-photo {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #ff6600;
+    background-size:cover;
+    overflow: hidden;
+}
+.front__face-photo img{
+    width: 120px;
+}
+
+.front__text {
+    position: relative;
+    top: -55px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-size: 18px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+    .front__text .front__text-header {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    
+
+
+    .front__text .front__text-hover {
+        position: relative;
+        top: 10px;
+        font-size: 10px;
+        color: tomato;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        border:none;
+        padding: 12px 15px;
+        border-radius: 30px;
+        background-color: #ff6600;
+        color: #fffdf1;
+    }
+
+.back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left, #000000, #2a2a2a, #000000 100% );
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h4 {
+    position: relative;
+    top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fffdf1;
+    transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
+}
+.prop{
+    background: linear-gradient(to top, #ff7700, #fffdf1 );
+    font-weight: bolder;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.prop hr{
+    width: 50vh;
+    background: linear-gradient(to top, #ff7700, #fffdf1 );
+    border:1px solid #ff6600
+}
+
+.test{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+ .photo{
+     margin-top: 20px;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+    position: relative;
+   bottom:400px;
+    left:0px;
+     width: 100%;
+
+ }
+ .photo img{
+     width: 300px;
+     height: 300px;
+ }
+@media screen and (max-width: 600px) {
+    
+
+    .rowcard{
+        display: grid;
+        grid-template-columns: repeat(3, 01fr);
+
+    }
+    .front__text-hover{
+     display: none;
+    }
+    .rowcard span svg{
+        color: transparent;
+       }
+    .outer-div,
+.inner-div {
+    height: 300px;
+    max-width: 300px;
+    margin-left: 3px;
+    position: relative;
+}
+.front__bkg-photo {
+    position: relative;
+    height: 100px;
+    width: 30px;
+}
+.front__face-photo {
+    position: relative;
+    top: -60px;
+    height: 100px;
+    width: 100px;
+}
+
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #000000, #131210, #332f2d 100% );
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fffdf1;
+}
+a:hover{
+    border: 1px #ff6600 inset ;
+    color: #ff6600;
+    padding: 5px;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: linear-gradient(to top, #fffdf1, #332f2d);
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #000, #ff6600);
+  
+  }
+  ::-webkit-scrollbar-button{
+    background: radial-gradient(circle , #fffdf1, #000000);
+  }
+  ::-webkit-resizer{
+    background: transparent;
+    border: none;
+  }
+
+  @media screen and (max-width: 900px) {
+   html{
+font-size: 12px;
+}
+  }
