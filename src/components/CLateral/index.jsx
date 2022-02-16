@@ -3,7 +3,7 @@ import './lateral.css';
 import logo from '../../assets/rifugo.svg';
 import { BsSearch } from "react-icons/bs";
 import Cards from '../Cards';
-
+import { Link } from 'react-router-dom';
 
 export default function CLateral() {
   const [value, setValue] = useState('');
@@ -14,7 +14,7 @@ export default function CLateral() {
    <div className='lateral'>
     <div className='search'>
       <div>
-    <img src={logo}/>
+   <Link to='/'><img src={logo}/></Link>
     </div>
     <div className='mt-4 ml-5 mb-3 search-label'>
   

@@ -22,3 +22,22 @@
 .rec span{
 margin-bottom: 10px;
 }
+
+@media screen and (max-width:800px) {
+    .doc h2, .doc h3, .doc h4,.doc h5 {
+        font-size: smaller;
+    }
+    .doc h2, .doc h3, .doc h4, .doc h5,.doc span{
+        margin-left: 5px;
+    }
+    .doc span, .doc li{
+        font-size: smaller;
+    }
+    .doc h2, .doc h3{
+        font-size: 18px;
+    }
+    .doc{
+        height: 100vh;
+    }
+
+}

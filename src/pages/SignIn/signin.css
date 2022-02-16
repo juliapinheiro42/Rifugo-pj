@@ -10,7 +10,7 @@
   .login{
     background: #FFFdf1;
     width: 400px;
-    height: 500px;
+    height: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,19 +77,19 @@
     color: #000;
     cursor: pointer;
   }
+  @media screen and (max-width: 900px) {
+    .login{
+      width: 400px ;
+      height: 480px;
+    }
+
+  }
   @media screen and (max-width: 600px) {
     .login{
       width: 300px ;
       height: 400px;
     }
-    .login a{
-      position: fixed;
-      bottom: 213px;
-      padding: 10px;
-      margin: 1.5em 0;
-      color: #000;
-      cursor: pointer;
-    }
+    
     form button{
       height: 30px;
       
@@ -99,8 +99,27 @@
       font-size: 2em;
     }
     .login-area{ 
-      height: 53%;
+      height: 100%;
       padding-bottom: 10px;
      
+    }
+    .login-area img{
+      padding: 10px;
+      margin-left: 30px;
+      width: 200px;
+      height: 200px;
+    }
+    .login a{
+      color: #fffdf1;
+    }
+    .login input{
+      margin-bottom: 10px;
+      height: 25px;
+      padding: 5px;
+      font-size: 10px;
+    }
+    form h1{
+      margin-bottom: 0.2em;
+      
     }
   }

@@ -195,14 +195,12 @@
      width: 300px;
      height: 300px;
  }
-@media screen and (max-width: 600px) {
-    
-
-    .rowcard{
-        display: grid;
-        grid-template-columns: repeat(3, 01fr);
-
+@media screen and (max-width: 900px) {
+    .about br{
+        display: block;
     }
+
+    
     .front__text-hover{
      display: none;
     }
@@ -226,6 +224,15 @@
     top: -60px;
     height: 100px;
     width: 100px;
+}
+
+}
+@media screen and (max-width: 500px) {
+.prop hr{
+    width: 25vh;
+}
+.prop{
+    font-size: x-small;
 }
 
 }

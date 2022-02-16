@@ -46,8 +46,9 @@ export default function SignUp() {
           <button type="submit">Cadastrar</button>
         </form>  
 
-        <Link to="/signin">Já tem uma conta? LogIn</Link>
+        <Link className='d-none d-lg-block' to="/signin">Já tem uma conta? LogIn</Link>
       </div>
+      <Link className='d-lg-none mt-5' to="/signin">Já tem uma conta? LogIn</Link>
     </div>
   );
 }

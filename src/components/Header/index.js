@@ -23,10 +23,10 @@ const Header = (props) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav  className='m-2 navbar' navbar>
                         <NavItem >
-                            <NavLink href='/aboutus'> About us</NavLink>
+                            <Link to='/aboutus'> About us</Link>
                         </NavItem>
                         <NavItem className='item'>
-                            <NavLink href='signin'>SignIn/ SignUp</NavLink>
+                            <Link to='signin'>SignIn/ SignUp</Link>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
