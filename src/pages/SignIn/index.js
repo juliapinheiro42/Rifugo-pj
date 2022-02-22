@@ -45,7 +45,7 @@ export default function SignIn() {
         </form>  
         <Link className='d-none d-lg-block' to="/signin">Já tem uma conta? LogIn</Link>
       </div>
-      <Link className='d-lg-none mt-5' to="/signin">Já tem uma conta? LogIn</Link>
+      <Link className='d-lg-none mt-5' to="/signup">Já tem uma conta? LogIn</Link>
     </div>
   );
 }
