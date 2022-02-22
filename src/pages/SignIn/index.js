@@ -43,9 +43,10 @@ export default function SignIn() {
           <input type="password" placeholder="*******" value={Password} required onChange={(e) => setPassword(e.target.value) } />
           <button type="submit">Submit</button>
         </form>  
-        <Link className='d-none d-lg-block' to="/signin">Não tem uma conta? Cadastre</Link>
+      <Link className='d-none d-lg-block' to="/signup">Criar uma conta</Link>
       </div>
-      <Link className='d-lg-none mt-5' to="/signuo">Não tem uma conta? Cadastre</Link>
+      <Link className='d-lg-none d-block mt-3' to="/signup">Criar uma conta</Link>
+    </div>
     </div>
   );
 }
